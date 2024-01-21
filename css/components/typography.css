@@ -1,0 +1,27 @@
+/* GENERAL CONFIG */
+
+p, a, summary, span 
+{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+ul { list-style: none; }
+
+.roleTransition { transition: opacity 0.5s ease-in-out; }
+
+@media screen and (min-width: 360px) and (max-width: 440px)
+{
+    p, a, summary, span 
+    {
+        font-size: 17px;
+        line-height: 1.6em;
+    }
+}

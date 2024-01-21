@@ -1,0 +1,33 @@
+/* GENERAL CONFIG */
+
+.blackHoleButton
+{
+    background-color: #000;
+    border: 2px solid #52579e;
+    border-radius: 50%;
+    animation: auraAnimation 2s infinite, floatAnimation 2s infinite ease-in-out; 
+}
+
+@keyframes auraAnimation 
+{
+    0% { box-shadow: 0 0 10px 5px rgba(0, 89, 255, 0.7); }
+    50% { box-shadow: 0 0 20px 15px rgba(0, 89, 255, 0.5); }
+    100% { box-shadow: 0 0 10px 5px rgba(0, 89, 255, 0.7); }
+}
+
+@keyframes floatAnimation 
+{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px)
+{
+    .blackHoleButton
+    {
+        width: 5em;
+        height: 9em;
+    }
+}

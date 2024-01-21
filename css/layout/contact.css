@@ -1,0 +1,24 @@
+/* GENERAL CONFIG */
+
+.contactPanes { margin-top: 1em; }
+.contactPane { margin-bottom: 1em; }
+
+.contactPathSimulation
+{
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.iconAndButton
+{
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+}
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px) 
+{
+    #mapPane { margin-top: 1em; }
+}

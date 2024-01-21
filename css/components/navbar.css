@@ -1,0 +1,63 @@
+/* GENERAL CONFIG */
+
+nav 
+{
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    background-color: #181E40;
+    border-radius: 0.8em;
+    width: 100%;
+}
+
+nav img 
+{
+    flex: 0 0 auto;
+    background-color: #020829;
+    padding: 0.7em; 
+}
+
+.tablink 
+{
+    background-color: #181E40;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: center; 
+    text-align: center;
+    padding: 1.5em;
+    font-size: 14px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.tablink:hover 
+{ 
+    background-color: #29305c;
+    transition: 1s; 
+}
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 320px) and (max-width: 480px) 
+{
+    nav 
+    {
+        width: 90%;
+        margin: 1em;
+    }
+
+    nav img 
+    {
+        max-height: 3.5em;
+        padding: 0.7em;
+    }
+
+    .tablink 
+    {
+        font-size: 11px;
+        padding: 2em;
+    }
+}

@@ -1,0 +1,79 @@
+/* GENERAL CONFIG */
+
+#headerPane
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerPathSimulation 
+{
+    padding-top: 0.6em;
+    margin-left: 1em;
+}
+
+#headerPaneContent { display: flex; }
+
+#headerProfilePicture
+{
+    border-radius: 0.8em;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px) 
+{
+    #headerPaneTopPaneBar 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headerPaneActionButtons 
+    { 
+        position: static;
+        margin-right: 1em;
+    }
+
+    #headerPane 
+    {
+        max-width: 22em;
+        height: auto;
+        position: static; 
+        margin-top: -2em;
+    }
+    
+    #headerPaneContent 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    #headerProfilePicture 
+    {
+        width: 11em;
+        height: auto;
+        margin-top: 1em;
+    }
+    
+    .headerTitleElement { margin-top: 0.5em; }
+    #headerTitles { margin-top: 2em; }
+    #headerTitles span {font-size: 18px;}
+    #headerTitles h3 { font-size: 18px; }
+    #headerTitles h1 { font-size: 25px; }
+    
+    #technologiesIcons
+    {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        width: 13em;
+        height: auto;
+    }      
+}

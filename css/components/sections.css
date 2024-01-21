@@ -1,0 +1,20 @@
+/* GENERAL CONFIG */
+
+.hidden { display: none; }
+.sectionInitialText { text-align: left; }
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px) 
+{
+    .tabContent 
+    {
+        padding: 2em; 
+    }
+
+    .sectionText
+    { 
+        font-size: 21px;
+        margin-top: 1em;
+    }
+}

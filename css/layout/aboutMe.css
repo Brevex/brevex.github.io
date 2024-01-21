@@ -1,0 +1,30 @@
+/* GENERAL CONFIG */
+
+#aboutCoffee 
+{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutTitles { line-height: 2em; }
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px) 
+{
+    #aboutCoffee 
+    {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    #coffeeCup
+    {
+        width: 7em;
+        height: auto;
+    }
+
+    #aboutTitles { margin-left: 2em; }
+}

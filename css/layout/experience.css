@@ -1,0 +1,55 @@
+/* GENERAL CONFIG */
+
+.githubSection
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionSubtitle { margin-top: 2em; }
+
+.degreeCel
+{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.course { font-weight: bolder !important;}
+
+.universityID
+{ 
+    font-weight: lighter; 
+    line-height: 1.8em;
+}
+
+.credentialLink { text-decoration: underline; }
+
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 360px) and (max-width: 440px)
+{
+    .githubSection
+    { 
+        margin-top: 2em;
+        margin-left: -3em;
+    }
+
+    #portalTitle 
+    { 
+        margin-top: 2em;
+        line-height: 1.7em;
+    }
+
+    #octocat
+    {
+        width: 12em;
+        height: 12em;
+    }
+
+    .degreeIcon { width: 55px; }
+    .minorIcon { width: 48px; }
+    .credentialLink { font-size: 14px; }
+    .universityID { margin-left: 2em; }
+}

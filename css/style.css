@@ -1,0 +1,33 @@
+@import 'components/blackHoleButton.css';
+@import 'components/fancyButton.css';
+@import 'components/map.css';
+@import 'components/navbar.css';
+@import 'components/pane.css';
+@import 'components/scrollBars.css';
+@import 'components/sections.css';
+@import 'components/swapText.css';
+@import 'components/typography.css';
+
+@import 'layout/aboutMe.css';
+@import 'layout/contact.css';
+@import 'layout/experience.css';
+@import 'layout/footer.css';
+@import 'layout/headerPane.css';
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body 
+{ 
+    background-color: #0E101A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { flex: 1; }

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="images/brenoLogo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Red+Hat+Display&display=swap" rel="stylesheet">
+        <title>Breno.dev</title>
+        <script defer src="scripts/tablinkNavbar.js"></script>
+        <script defer src="scripts/swapText.js"></script>
+        <script defer src="scripts/disableDragDrop.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="images/brenoLogo.png" alt="Site logo">
+            <button class="tablink" onclick="openPage('home')" id="defaultOpen">Home</button>
+            <button class="tablink" onclick="openPage('about')">About</button>
+            <button class="tablink" onclick="openPage('projects')">Experience</button>
+            <button class="tablink" onclick="openPage('contact')">Contact</button>
+        </nav>
+        <main id="mainContent">
+            <header id="home" class="tabContent hidden">
+                <div class="pane" id="headerPane">
+                    <div class="topPaneBar" id="headerPaneTopPaneBar">
+                        <div class="pathSimulation" id="headerPathSimulation">
+                            <h4>/home/breno/hello</h4>
+                        </div>
+                        <div class="paneActionButtons" id="headerPaneActionButtons">
+                            <div class="paneBtn paneBtn1"></div>
+                            <div class="paneBtn paneBtn2"></div>
+                            <div class="paneBtn paneBtn3"></div>
+                        </div>
+                    </div>
+                    <div class="paneContent" id="headerPaneContent">
+                        <img src="images/profilePicture.jpg" id="headerProfilePicture" alt="My picture">
+                        <div id="headerTitles">
+                            <h3 class="headerTitleElement">Hey, how is it going?</h3>
+                            <h1 class="headerTitleElement" >My name is Breno!</h1>
+                            <div class="swapText headerTitleElement">
+                                <span class="spanText firstWord">I'm&nbsp;</span>
+                                <span class="spanText secWord"></span>
+                            </div>
+                        </div>
+                        <img src="https://skillicons.dev/icons?i=java,spring,rust,cpp" 
+                        id="technologiesIcons" alt="tech Skills Icons">
+                    </div>
+                </div>
+            </header>
+            <section id="about" class="tabContent hidden">
+                <h2 class="sectionTitle">About me</h2>
+                <article class="sectionText">
+                    <p>
+                        My career is centered around Java for back-end development and low-level
+                        programming for systems, allowing me to enjoy the best of both worlds.
+                    </p>
+                </article>
+                <div id="aboutCoffee">
+                    <img src="images/coffeeCup.png" id="coffeeCup" alt="coffee cup">
+                    <div id="aboutTitles">
+                        <h3>Java adept.</h3>
+                        <h3>Versatile.</h3>
+                        <h3>Music lover.</h3>
+                    </div>
+                </div>
+                <article class="sectionText">
+                    <p>
+                        Exploring languages like C++ has sparked my curiosity about the inner workings
+                        of systems. I leverage this curiosity as motivation to tackle complex problems.
+                    </p>
+                </article>
+            </section>
+            <section id="projects" class="tabContent hidden">
+                <h2 class="sectionTitle">Projects</h2>
+                <h4 id="portalTitle">Click the portal below to visit my GitHub!</h4>
+                <div class="githubSection">
+                    <img src="images/myOctocat.png" id="octocat" alt="My GitHub Octocat">
+                    <button class="blackHoleButton" onclick="window.location.href='https://github.com/Brevex?tab=repositories'"></button>
+                </div>
+                <h2 class="sectionTitle sectionSubtitle">Academic Education</h2>
+                <div class="degrees">
+                    <div class="degreeCel">
+                        <img src="images/degree.png" class="degreeIcon" alt="degree">
+                        <div class="university">
+                            <h6 class="universityID course">Bachelor's Degree in Information Technology</h6>
+                            <h6 class="universityID institution">Federal University of Rio Grande do Norte</h6>
+                            <h6 class="universityID duration"> (2022 - 2024) </h6>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="sectionTitle sectionSubtitle">Minors / Courses</h2>
+                <div class="degreeCel">
+                    <img src="images/ibmLogo.png" class="degreeIcon minorIcon" alt="degree">
+                    <div class="university">
+                        <h6 class="universityID course">Python Basics for Data Science</h6>
+                        <h6 class="universityID institution">IBM</h6>
+                        <h6 class="universityID credLink">
+                            <a href="https://courses.edx.org/certificates/d0363dcab9bb45f995e268c150919b4b" 
+                            target="_blank" class="credentialLink">Click here to see credential &#8599;</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="tabContent hidden">
+                <h2 class="sectionTitle">Contact</h2>
+                <article class="sectionText">
+                    <p>Interested? Contact me!</p>
+                </article>
+                <div class="contactPanes">
+                    <div class="pane contactPane">
+                        <div class="topPaneBar">
+                            <div class="pathSimulation contactPathSimulation">
+                                <h4>/home/breno/linkedIn</h4>
+                            </div>
+                            <div class="paneActionButtons">
+                                <div class="paneBtn paneBtn1"></div>
+                                <div class="paneBtn paneBtn2"></div>
+                                <div class="paneBtn paneBtn3"></div>
+                            </div>
+                        </div>
+                        <div class="paneContent contactPaneContent">
+                            <div class="iconAndButton">
+                                <img src="https://skillicons.dev/icons?i=linkedin" class="contactIcon" alt="LinkedIn icon">
+                                <a href="https://www.linkedin.com/in/brenobDev/" target="_blank">
+                                    <button class="fancyButton contactButton">
+                                        <span>Checkout</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pane contactPane">
+                        <div class="topPaneBar">
+                            <div class="pathSimulation contactPathSimulation">
+                                <h4>/home/breno/gitHub</h4>
+                            </div>
+                            <div class="paneActionButtons">
+                                <div class="paneBtn paneBtn1"></div>
+                                <div class="paneBtn paneBtn2"></div>
+                                <div class="paneBtn paneBtn3"></div>
+                            </div>
+                        </div>
+                        <div class="paneContent contactPaneContent">
+                            <div class="iconAndButton">
+                                <img src="https://skillicons.dev/icons?i=github" class="contactIcon" alt="LinkedIn icon">
+                                <a href="https://github.com/Brevex" target="_blank">
+                                    <button class="fancyButton contactButton">
+                                        <span>Checkout</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="sectionText">
+                    <p>Come talk to me on the UFRN campus.</p>
+                </article>
+                <div class="pane contactPane" id="mapPane">
+                    <div class="topPaneBar">
+                        <div class="pathSimulation contactPathSimulation">
+                            <h4>/home/breno/location</h4>
+                        </div>
+                        <div class="paneActionButtons">
+                            <div class="paneBtn paneBtn1"></div>
+                            <div class="paneBtn paneBtn2"></div>
+                            <div class="paneBtn paneBtn3"></div>
+                        </div>
+                    </div>
+                    <div class="paneContent contactPaneContent">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1670626450496!2d-35.20809008899471!3d-5.8320578941267645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff75c341eaaf%3A0x9e690237eaddaf9a!2sMetr%C3%B3pole%20Digital%20-%20IMD%2FUFRN!5e0!3m2!1spt-BR!2sbr!4v1705633174025!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="locationMap"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <span>&copy; Breno 2024</span>
+        </footer>
+    </body>
+</html>

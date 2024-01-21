@@ -1,0 +1,42 @@
+/* GENERAL CONFIG */
+
+.pane
+{
+    background-color: #181E40;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.topPaneBar
+{
+    background-color: #020829;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+.pathSimulation { align-self: center; }
+
+.paneActionButtons 
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 1em;
+}
+
+.paneBtn 
+{
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    margin: 0.9em 0 0.6em 0.6em;
+}
+
+.paneBtn1 { background-color: #00C785; }
+.paneBtn2 { background-color: #E8FF00; }
+.paneBtn3 { background-color: #991212; }
