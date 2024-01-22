@@ -1,17 +1,26 @@
 function openPage(pageName) 
 {
   const tabcontent = document.getElementsByClassName("tabContent");
+  const tablinks = document.getElementsByClassName("tablink");
 
-  Array.from(tabcontent).forEach((tab) => {
+  Array.from(tabcontent).forEach(tab => {
+      tab.classList.add("hidden");
+  });
 
-    tab.classList.add("hidden"); 
+  Array.from(tablinks).forEach(tab => {
+      tab.classList.remove("active");
   });
 
   const pageElement = document.getElementById(pageName);
-
   if (pageElement) 
-  { 
-    pageElement.classList.remove("hidden"); 
+  {
+      pageElement.classList.remove("hidden");
+  }
+
+  const activeTab = Array.from(tablinks).find(tab => tab.getAttribute('onclick').includes(pageName));
+  if (activeTab) 
+  {
+      activeTab.classList.add("active");
   }
 }
 
