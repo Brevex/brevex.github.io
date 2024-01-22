@@ -8,6 +8,7 @@
     font-size: 23px;
     font-weight: bolder;
     color: #E8FF00;
+    overflow: hidden;
 }
 
 .swapText .spanText.firstWord { color: #fff; }

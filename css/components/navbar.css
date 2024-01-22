@@ -8,13 +8,17 @@ nav
     background-color: #181E40;
     border-radius: 0.8em;
     width: 100%;
+    box-sizing: border-box; 
+    overflow: hidden;
+    margin: 1em; 
 }
 
 nav img 
 {
     flex: 0 0 auto;
     background-color: #020829;
-    padding: 0.7em; 
+    padding: 0.7em;
+    max-height: 3.5em;
 }
 
 .tablink 
@@ -25,39 +29,24 @@ nav img
     border: none;
     outline: none;
     cursor: pointer;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
-    padding: 1.5em;
     font-size: 14px;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 1 auto; 
 }
 
-.tablink:hover 
-{ 
-    background-color: #29305c;
-    transition: 1s; 
-}
+.tablink.active { text-decoration: underline; }
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 320px) and (max-width: 480px) 
+@media screen and (min-width: 360px) and (max-width: 440px)
 {
     nav 
     {
-        width: 90%;
-        margin: 1em;
+        width: 90%; 
+        margin: 0.8em auto; 
     }
 
-    nav img 
-    {
-        max-height: 3.5em;
-        padding: 0.7em;
-    }
-
-    .tablink 
-    {
-        font-size: 11px;
-        padding: 2em;
-    }
+    .tablink { font-size: 11px; }
 }
