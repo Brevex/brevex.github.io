@@ -6,6 +6,7 @@
     border: 2px solid #52579e;
     border-radius: 50%;
     animation: auraAnimation 2s infinite, floatAnimation 2s infinite ease-in-out; 
+    cursor: pointer;
 }
 
 @keyframes auraAnimation 
@@ -23,11 +24,34 @@
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px)
+@media screen and (min-width: 320px) and (max-width: 480px)
 {
     .blackHoleButton
     {
         width: 5em;
         height: 9em;
+    }
+}
+
+/* IPADS, TABLETS, SHORT SCREENS, LAPTOPS, DESKTOPS 1 */
+
+@media screen and (min-width: 481px) and (max-width: 1200px)
+{
+    .blackHoleButton
+    {
+        width: 8em;
+        height: 12em;
+    }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    .blackHoleButton
+    {
+        width: 8em;
+        height: 12em;
+        margin-left: 7em;
     }
 }

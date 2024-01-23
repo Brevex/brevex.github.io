@@ -16,7 +16,7 @@ nav
 nav img 
 {
     flex: 0 0 auto;
-    background-color: #020829;
+    background-color: #04001a;
     padding: 0.7em;
     max-height: 3.5em;
 }
@@ -25,7 +25,6 @@ nav img
 {
     background-color: #181E40;
     color: white;
-    font-weight: bolder;
     border: none;
     outline: none;
     cursor: pointer;
@@ -40,13 +39,54 @@ nav img
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px)
+@media screen and (min-width: 320px) and (max-width: 480px)
 {
     nav 
     {
-        width: 90%; 
+        width: 19em; 
         margin: 0.8em auto; 
     }
 
     .tablink { font-size: 11px; }
+}
+
+/* IPADS, TABLETS */
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    nav 
+    {
+        width: 27em; 
+        margin: 2em auto;
+    }
+
+    .tablink { font-size: 14px; }
+}
+
+/* SHORT SCREENS, LAPTOPS, DESKTOPS 1 */
+
+@media screen and (min-width: 769px) and (max-width: 1200px)
+{
+    nav 
+    {
+        width: 42em; 
+        margin: 2em auto;
+    }
+
+    nav img { max-height: 4em; }
+    .tablink { font-size: 16px; }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    nav 
+    {
+        width: 60em; 
+        margin: 2em auto;
+    }
+
+    nav img { max-height: 4em; }
+    .tablink { font-size: 17px; }
 }

@@ -46,12 +46,5 @@
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
   
-.fancyButton:hover::before 
-{
-    transform: translate3d(100%, 0, 0);
-}
-
-.fancyButton:active 
-{
-    transform: scale(0.95);
-}
+.fancyButton:hover::before { transform: translate3d(100%, 0, 0); }
+.fancyButton:active { transform: scale(0.95); }
