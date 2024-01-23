@@ -23,7 +23,7 @@
             <button class="tablink" onclick="openPage('contact')">Contact</button>
         </nav>
         <main id="mainContent">
-            <header id="home" class="tabContent hidden">
+            <header id="home" class="hidden sectionContent">
                 <div class="pane" id="headerPane">
                     <div class="topPaneBar" id="headerPaneTopPaneBar">
                         <div class="pathSimulation" id="headerPathSimulation">
@@ -44,13 +44,13 @@
                                 <span class="spanText firstWord">I'm&nbsp;</span>
                                 <span class="spanText secWord"></span>
                             </div>
+                            <img src="https://skillicons.dev/icons?i=java,spring,rust,cpp" 
+                            id="technologiesIcons" alt="tech Skills Icons">
                         </div>
-                        <img src="https://skillicons.dev/icons?i=java,spring,rust,cpp" 
-                        id="technologiesIcons" alt="tech Skills Icons">
                     </div>
                 </div>
             </header>
-            <section id="about" class="tabContent hidden">
+            <section id="about" class="tabContent hidden sectionContent">
                 <h2 class="sectionTitle">About me</h2>
                 <article class="sectionText">
                     <p>
@@ -73,7 +73,7 @@
                     </p>
                 </article>
             </section>
-            <section id="projects" class="tabContent hidden">
+            <section id="projects" class="tabContent hidden sectionContent">
                 <h2 class="sectionTitle">Projects</h2>
                 <h4 id="portalTitle">Click the portal below to visit my GitHub!</h4>
                 <div class="githubSection">
@@ -104,80 +104,103 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="tabContent hidden">
+            <section id="contact" class="tabContent hidden sectionContent">
                 <h2 class="sectionTitle">Contact</h2>
                 <article class="sectionText">
                     <p>Interested? Contact me!</p>
                 </article>
-                <div class="contactPanes">
-                    <div class="pane contactPane">
-                        <div class="topPaneBar">
-                            <div class="pathSimulation contactPathSimulation">
-                                <h4>/home/breno/linkedIn</h4>
+                <div class="allContactPanes">
+                    <div class="contactPanes">
+                        <div class="pane contactPane">
+                            <div class="topPaneBar">
+                                <div class="pathSimulation contactPathSimulation">
+                                    <h5>/home/breno/linkedIn</h5>
+                                </div>
+                                <div class="paneActionButtons">
+                                    <div class="paneBtn paneBtn1"></div>
+                                    <div class="paneBtn paneBtn2"></div>
+                                    <div class="paneBtn paneBtn3"></div>
+                                </div>
                             </div>
-                            <div class="paneActionButtons">
-                                <div class="paneBtn paneBtn1"></div>
-                                <div class="paneBtn paneBtn2"></div>
-                                <div class="paneBtn paneBtn3"></div>
+                            <div class="paneContent contactPaneContent">
+                                <div class="iconAndButton">
+                                    <img src="https://skillicons.dev/icons?i=linkedin" class="contactIcon" alt="LinkedIn icon">
+                                    <a href="https://www.linkedin.com/in/brenobDev/" target="_blank">
+                                        <button class="fancyButton contactButton">
+                                            <span>Checkout</span>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="paneContent contactPaneContent">
-                            <div class="iconAndButton">
-                                <img src="https://skillicons.dev/icons?i=linkedin" class="contactIcon" alt="LinkedIn icon">
-                                <a href="https://www.linkedin.com/in/brenobDev/" target="_blank">
-                                    <button class="fancyButton contactButton">
-                                        <span>Checkout</span>
-                                    </button>
-                                </a>
+                        <div class="pane contactPane">
+                            <div class="topPaneBar">
+                                <div class="pathSimulation contactPathSimulation">
+                                    <h5>/home/breno/gitHub</h5>
+                                </div>
+                                <div class="paneActionButtons">
+                                    <div class="paneBtn paneBtn1"></div>
+                                    <div class="paneBtn paneBtn2"></div>
+                                    <div class="paneBtn paneBtn3"></div>
+                                </div>
+                            </div>
+                            <div class="paneContent contactPaneContent">
+                                <div class="iconAndButton">
+                                    <img src="https://skillicons.dev/icons?i=github" class="contactIcon" alt="LinkedIn icon">
+                                    <a href="https://github.com/Brevex" target="_blank">
+                                        <button class="fancyButton contactButton">
+                                            <span>Checkout</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pane contactPane">
+                            <div class="topPaneBar">
+                                <div class="pathSimulation contactPathSimulation">
+                                    <h5>/home/breno/contacts</h5>
+                                </div>
+                                <div class="paneActionButtons">
+                                    <div class="paneBtn paneBtn1"></div>
+                                    <div class="paneBtn paneBtn2"></div>
+                                    <div class="paneBtn paneBtn3"></div>
+                                </div>
+                            </div>
+                            <div class="paneContent contactPaneContent">
+                                <div class="iconAndButton specialContact">
+                                    <img src="images/mail.png" class="contactIcon customContactIcon" alt="Email icon">
+                                    <h5>BrenoB99@Protonmail.com</h5>
+                                </div>
+                                <div class="iconAndButton specialContact">
+                                    <img src="images/phone.png" class="contactIcon customContactIcon" alt="Phone icon">
+                                    <h5>+55 84 99171-6545</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pane contactPane">
-                        <div class="topPaneBar">
-                            <div class="pathSimulation contactPathSimulation">
-                                <h4>/home/breno/gitHub</h4>
+                    <div class="mapSpace">
+                        <div class="pane contactPane" id="mapPane">
+                            <div class="topPaneBar">
+                                <div class="pathSimulation contactPathSimulation">
+                                    <h5>/home/breno/location</h5>
+                                </div>
+                                <div class="paneActionButtons">
+                                    <div class="paneBtn paneBtn1"></div>
+                                    <div class="paneBtn paneBtn2"></div>
+                                    <div class="paneBtn paneBtn3"></div>
+                                </div>
                             </div>
-                            <div class="paneActionButtons">
-                                <div class="paneBtn paneBtn1"></div>
-                                <div class="paneBtn paneBtn2"></div>
-                                <div class="paneBtn paneBtn3"></div>
-                            </div>
-                        </div>
-                        <div class="paneContent contactPaneContent">
-                            <div class="iconAndButton">
-                                <img src="https://skillicons.dev/icons?i=github" class="contactIcon" alt="LinkedIn icon">
-                                <a href="https://github.com/Brevex" target="_blank">
-                                    <button class="fancyButton contactButton">
-                                        <span>Checkout</span>
-                                    </button>
-                                </a>
+                            <div class="paneContent contactPaneContent">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1670626450496!2d-35.20809008899471!3d-5.8320578941267645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff75c341eaaf%3A0x9e690237eaddaf9a!2sMetr%C3%B3pole%20Digital%20-%20IMD%2FUFRN!5e0!3m2!1spt-BR!2sbr!4v1705633174025!5m2!1spt-BR!2sbr" 
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="locationMap"></iframe>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <article class="sectionText">
-                    <p>Come talk to me on the UFRN campus.</p>
-                </article>
-                <div class="pane contactPane" id="mapPane">
-                    <div class="topPaneBar">
-                        <div class="pathSimulation contactPathSimulation">
-                            <h4>/home/breno/location</h4>
-                        </div>
-                        <div class="paneActionButtons">
-                            <div class="paneBtn paneBtn1"></div>
-                            <div class="paneBtn paneBtn2"></div>
-                            <div class="paneBtn paneBtn3"></div>
-                        </div>
-                    </div>
-                    <div class="paneContent contactPaneContent">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.1670626450496!2d-35.20809008899471!3d-5.8320578941267645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff75c341eaaf%3A0x9e690237eaddaf9a!2sMetr%C3%B3pole%20Digital%20-%20IMD%2FUFRN!5e0!3m2!1spt-BR!2sbr!4v1705633174025!5m2!1spt-BR!2sbr" 
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="locationMap"></iframe>
+                        <article class="sectionText mapText">
+                            <p>Come talk to me on the UFRN campus.</p>
+                        </article>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <span>&copy; Breno 2024</span>
-        </footer>
     </body>
 </html>

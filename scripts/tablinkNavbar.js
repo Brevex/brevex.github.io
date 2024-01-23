@@ -1,6 +1,6 @@
 function openPage(pageName) 
 {
-  const tabcontent = document.getElementsByClassName("tabContent");
+  const tabcontent = document.getElementsByClassName("sectionContent");
   const tablinks = document.getElementsByClassName("tablink");
 
   Array.from(tabcontent).forEach(tab => {

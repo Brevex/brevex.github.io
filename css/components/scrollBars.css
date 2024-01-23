@@ -3,10 +3,3 @@
 ::-webkit-scrollbar { width: 0.5em; }
 ::-webkit-scrollbar-thumb { background-color: #181E40; }
 ::-webkit-scrollbar-track { background-color: #000; }
-
-/* MOBILE LAYOUT */
-
-@media only screen and (min-width: 360px) and (max-width: 440px) 
-{
-    ::-webkit-scrollbar { width: 0.5em !important; }
-}

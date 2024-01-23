@@ -17,11 +17,41 @@ ul { list-style: none; }
 
 .roleTransition { transition: opacity 0.5s ease-in-out; }
 
-@media screen and (min-width: 360px) and (max-width: 440px)
+/* BASE MOBILE-FIRST LAYOUT */
+
+@media screen and (min-width: 320px) and (max-width: 480px)
 {
     p, a, summary, span 
     {
         font-size: 17px;
         line-height: 1.6em;
     }
+}
+
+/* IPADS, TABLETS */
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    h2 { font-size: 30px; }
+}
+
+/* SHORT SCREENS, LAPTOPS */
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    h2 { font-size: 35px; }
+}
+
+/* DESKTOPS 1 */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px)
+{
+    h2 { font-size: 35px; }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    h2 { font-size: 35px; }
 }

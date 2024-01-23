@@ -25,7 +25,7 @@
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px) 
+@media screen and (min-width: 320px) and (max-width: 480px) 
 {
     #headerPaneTopPaneBar 
     {
@@ -42,10 +42,10 @@
 
     #headerPane 
     {
-        max-width: 22em;
+        width: 19em;
         height: auto;
         position: static; 
-        margin-top: -2em;
+        margin-bottom: 1em;
     }
     
     #headerPaneContent 
@@ -76,4 +76,221 @@
         width: 13em;
         height: auto;
     }      
+}
+
+/* IPADS, TABLETS */
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    #headerPaneTopPaneBar 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headerPaneActionButtons 
+    { 
+        position: static;
+        margin-right: 1em;
+    }
+
+    #headerPane 
+    {
+        width: 27em;
+        height: auto;
+        position: static; 
+    }
+    
+    #headerPaneContent 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    #headerProfilePicture 
+    {
+        width: 15em;
+        height: auto;
+        margin-top: 1em;
+    }
+    
+    .headerTitleElement { margin-top: 0.5em; }
+    #headerTitles { margin-top: 2em; }
+    #headerTitles span {font-size: 24px;}
+    #headerTitles h3 { font-size: 24px; }
+    #headerTitles h1 { font-size: 33px; }
+    
+    #technologiesIcons
+    {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 0.3em;
+        width: 16em;
+        height: auto;
+    }
+}
+
+/* SHORT SCREENS, LAPTOPS */
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+    #headerPaneTopPaneBar 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headerPaneActionButtons 
+    { 
+        position: static;
+        margin-right: 1em;
+    }
+
+    #headerPane 
+    {
+        width: 42em;
+        height: 46em;
+        margin-bottom: 2em;
+        position: static; 
+    }
+    
+    #headerPaneContent 
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    #headerProfilePicture 
+    {
+        width: 17em;
+        height: auto;
+        margin-top: 1em;
+    }
+    
+    .headerTitleElement { margin-top: 0.5em; }
+    #headerTitles { margin-top: 2em; }
+    #headerTitles span {font-size: 30px;}
+    #headerTitles h3 { font-size: 30px; }
+    #headerTitles h1 { font-size: 40px; }
+    
+    #technologiesIcons
+    {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 1.7em;
+        width: 17em;
+        height: auto;
+    }
+}
+
+/* DESKTOPS 1 */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px)
+{
+    #headerPaneTopPaneBar 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headerPaneActionButtons 
+    { 
+        position: static;
+        margin-right: 1em;
+    }
+
+    #headerPane 
+    {
+        width: 42em;
+        height: 30em;
+        position: static; 
+    }
+    
+    #headerPaneContent 
+    {
+        align-items: center;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    #headerProfilePicture 
+    {
+        width: 14em;
+        height: auto;
+        margin-right: 3em;
+    }
+    
+    .headerTitleElement { margin-top: 0.5em; }
+    #headerTitles { margin-top: 2em; }
+    #headerTitles span {font-size: 23px;}
+    #headerTitles h3 { font-size: 23px; }
+    #headerTitles h1 { font-size: 34px; }
+    
+    #technologiesIcons
+    {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 14em;
+        height: auto;
+    }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    #headerPaneTopPaneBar 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #headerPaneActionButtons 
+    { 
+        position: static;
+        margin-right: 1em;
+    }
+
+    #headerPane 
+    {
+        width: 60em; 
+        height: 30em;
+    }
+    
+    #headerPaneContent 
+    {
+        align-items: center;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    #headerProfilePicture 
+    {
+        width: 16em;
+        height: auto;
+        margin-right: 3em;
+    }
+    
+    .headerTitleElement { margin-top: 0.5em; }
+    #headerTitles { margin-top: 2em; }
+    #headerTitles span {font-size: 28px;}
+    #headerTitles h3 { font-size: 28px; }
+    #headerTitles h1 { font-size: 40px; }
+    
+    #technologiesIcons
+    {
+        margin-top: 4em;
+        margin-bottom: 2em;
+        margin-left: 1.7em;
+        width: 15em;
+        height: auto;
+    }
 }

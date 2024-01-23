@@ -14,11 +14,102 @@
     display: flex;
     margin: 1em;
     justify-content: space-evenly;
+    align-items: center;
 }
+
+.specialContact { justify-content: flex-start; }
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px) 
+@media screen and (min-width: 320px) and (max-width: 480px) 
 {
     #mapPane { margin-top: 1em; }
+
+    .customContactIcon 
+    { 
+        width: 50px;
+        margin-right: 1em;
+    }
+}
+
+/* IPADS, TABLETS */
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+    .contactPane 
+    {
+        margin-top: 2em !important;
+        margin: auto;
+        max-width: 20em;
+    }
+
+    #mapPane 
+    { 
+        margin-top: 1em; 
+        margin-bottom: 3em;
+    }
+
+    .customContactIcon 
+    { 
+        width: 50px;
+        margin-right: 1em;
+    }
+}
+
+/* SHORT SCREENS, LAPTOPS, DESKTOPS 1 */
+
+@media screen and (min-width: 769px) and (max-width: 1200px)
+{
+    .allContactPanes
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin-bottom: 3em;
+    }
+
+    .contactPane 
+    {
+        margin-top: 1em !important;
+        margin: auto;
+        max-width: 25em;
+    }
+
+    .customContactIcon 
+    { 
+        width: 50px;
+        margin-right: 1em;
+    }
+
+    #mapPane { width: 20em; }
+    #locationMap { height: 22em; }
+    .mapText { margin-left: 3em; }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    .allContactPanes
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin-top: 2em;
+    }
+
+    .contactPane 
+    {
+        margin-top: 1em !important;
+        margin: auto;
+        max-width: 25em;
+    }
+
+    .customContactIcon 
+    { 
+        width: 50px;
+        margin-right: 1em;
+    }
+
+    #locationMap { height: 22em; }
 }

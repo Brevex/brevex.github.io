@@ -11,7 +11,6 @@
 @import 'layout/aboutMe.css';
 @import 'layout/contact.css';
 @import 'layout/experience.css';
-@import 'layout/footer.css';
 @import 'layout/headerPane.css';
 
 *
@@ -23,7 +22,7 @@
 
 body 
 { 
-    background-color: #0E101A;
+    background-color: #14151f;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

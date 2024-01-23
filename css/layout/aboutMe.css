@@ -12,7 +12,7 @@
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px) 
+@media screen and (min-width: 320px) and (max-width: 480px) 
 {
     #aboutCoffee 
     {
@@ -27,4 +27,50 @@
     }
 
     #aboutTitles { margin-left: 2em; }
+}
+
+/* IPADS, TABLETS, SHORT SCREENS, LAPTOPS, DESKTOPS 1 */
+
+@media screen and (min-width: 481px) and (max-width: 1200px)
+{
+    #aboutCoffee 
+    {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    #coffeeCup
+    {
+        width: 9em;
+        height: auto;
+    }
+
+    #aboutTitles 
+    { 
+        margin-left: 2em; 
+        font-size: 20px;
+    }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    #aboutCoffee 
+    {
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    #coffeeCup
+    {
+        width: 9em;
+        height: auto;
+    }
+
+    #aboutTitles 
+    { 
+        margin-left: 2em; 
+        font-size: 20px;
+    }
 }

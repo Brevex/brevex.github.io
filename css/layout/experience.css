@@ -28,7 +28,7 @@
 
 /* BASE MOBILE-FIRST LAYOUT */
 
-@media screen and (min-width: 360px) and (max-width: 440px)
+@media screen and (min-width: 320px) and (max-width: 480px)
 {
     .githubSection
     { 
@@ -48,8 +48,78 @@
         height: 12em;
     }
 
-    .degreeIcon { width: 55px; }
-    .minorIcon { width: 55px; }
+    .degreeIcon { width: 45px; }
+    .minorIcon { width: 45px; }
     .credentialLink { font-size: 14px; }
     .universityID { margin-left: 2em; }
+}
+
+/* IPADS, TABLETS, SHORT SCREENS, LAPTOPS, DESKTOPS 1 */
+
+@media screen and (min-width: 481px) and (max-width: 1200px)
+{
+    .githubSection
+    { 
+        margin-top: 2em;
+        margin-left: -3em;
+    }
+
+    #portalTitle 
+    { 
+        margin-top: 2em;
+        font-size: 22px;
+    }
+
+    #octocat
+    {
+        width: 18em;
+        height: 18em;
+    }
+
+    .degreeIcon { width: 65px; }
+    .minorIcon { width: 65px; }
+    .credentialLink { font-size: 20px; }
+
+    .universityID 
+    { 
+        margin-left: 2em;
+        font-size: 18px;
+    }
+
+    #projects { margin-bottom: 5em; }
+}
+
+/* DESKTOPS 2 */
+
+@media screen and (min-width: 1201px)
+{
+    .githubSection
+    { 
+        margin-top: 2em;
+        margin-left: -3em;
+    }
+
+    #portalTitle 
+    { 
+        margin-top: 2em;
+        font-size: 22px;
+    }
+
+    #octocat
+    {
+        width: 18em;
+        height: 18em;
+    }
+
+    .degreeIcon { width: 65px; }
+    .minorIcon { width: 65px; }
+    .credentialLink { font-size: 20px; }
+
+    .universityID 
+    { 
+        margin-left: 2em;
+        font-size: 18px;
+    }
+
+    #projects { margin-bottom: 5em; }
 }
