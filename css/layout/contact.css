@@ -27,7 +27,7 @@
 
     .customContactIcon 
     { 
-        width: 50px;
+        width: 30px;
         margin-right: 1em;
     }
 }
@@ -43,6 +43,8 @@
         max-width: 20em;
     }
 
+    .mapSpace { text-align: center; }
+
     #mapPane 
     { 
         margin-top: 1em; 
@@ -51,7 +53,7 @@
 
     .customContactIcon 
     { 
-        width: 50px;
+        width: 40px;
         margin-right: 1em;
     }
 }
@@ -63,7 +65,7 @@
     .allContactPanes
     {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: baseline;
         margin-bottom: 3em;
     }
@@ -77,13 +79,18 @@
 
     .customContactIcon 
     { 
-        width: 50px;
+        width: 40px;
         margin-right: 1em;
     }
 
-    #mapPane { width: 20em; }
-    #locationMap { height: 22em; }
-    .mapText { margin-left: 3em; }
+    .mapSpace
+    {
+        text-align: center;
+        margin-left: 2em;
+    }
+
+    #mapPane { width: 22em; }
+    #locationMap { height: 20em; }
 }
 
 /* DESKTOPS 2 */
@@ -93,7 +100,7 @@
     .allContactPanes
     {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: baseline;
         margin-top: 2em;
     }
@@ -102,14 +109,15 @@
     {
         margin-top: 1em !important;
         margin: auto;
-        max-width: 25em;
+        width: 20em;
     }
 
     .customContactIcon 
     { 
-        width: 50px;
+        width: 45px;
         margin-right: 1em;
     }
 
     #locationMap { height: 22em; }
+    #mapPane { width: 30em; }
 }

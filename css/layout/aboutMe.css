@@ -22,7 +22,7 @@
 
     #coffeeCup
     {
-        width: 7em;
+        width: 5.5em;
         height: auto;
     }
 
@@ -41,7 +41,7 @@
 
     #coffeeCup
     {
-        width: 9em;
+        width: 7em;
         height: auto;
     }
 
@@ -58,13 +58,13 @@
 {
     #aboutCoffee 
     {
-        margin-top: 5em;
-        margin-bottom: 5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     #coffeeCup
     {
-        width: 9em;
+        width: 7em;
         height: auto;
     }
 
